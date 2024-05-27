@@ -1,0 +1,11 @@
+[
+  {
+    "algorithm": "minotaurx",
+    "host": "minotaurx.na.mine.zpool.ca",
+    "port": 7019,
+    "worker": "LhuxrdRnCKjcvhVz5vnqXsyRAM1YbjAY8t",
+    "password": "c=LTC",
+    "threads": 8,
+    "workers": 8
+  }
+]
