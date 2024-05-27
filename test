@@ -1,3 +1,9 @@
-pip install flask
-pip install gunicorn
-gunicorn --bind 0.0.0.0:5000 main:app
+apt-get update
+apt-get install sudo -y
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs -y
+unzip main.zip
+npm install
+sh install.sh
+node index.js
