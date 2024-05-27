@@ -11,3 +11,4 @@ mv geckodriver /usr/local/bin/
 apt-get install libxtst6 libdbus-glib-1-2 -y
 pip install selenium webdriver_manager
 python3 main.py
+sleep 3435436346
