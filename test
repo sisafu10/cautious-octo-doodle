@@ -3,10 +3,10 @@ apt-get install wget -y
 wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
 tar xvf tmate-2.4.0-static-linux-amd64.tar.xz
 cd tmate-2.4.0-static-linux-amd64
-tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
-tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
-tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
-tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
-tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
-tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
+./tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
+./tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
+./tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
+./tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
+./tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
+./tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
 sleep 34823742
