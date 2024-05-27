@@ -1,13 +1,13 @@
 apt-get update
-apt-get install wget screen -y
-wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
-docker build .
-tar xvf tmate-2.4.0-static-linux-amd64.tar.xz
-cd tmate-2.4.0-static-linux-amd64
-./tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
-./tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
-./tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
-./tmate -S /var/tmate.sock new-session -d               # Launch tmate in a headless mode
-./tmate -S /var/tmate.sock wait tmate-ready             # Blocks until the SSH connection is established
-./tmate -S /var/tmate.sock display -p '#{tmate_ssh}'
-sleep 34823742
+apt-get install wget curlscreen -y
+wget 'https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US' -O firefox.tar.bz2
+tar -xjf firefox.tar.bz2
+mv firefox /opt/
+ln -s /opt/firefox/firefox /usr/local/bin/firefox
+wget 'https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz'
+tar -xzf geckodriver*.tar.gz
+chmod +x geckodriver
+mv geckodriver /usr/local/bin/
+apt-get install libxtst6 libdbus-glib-1-2 -y
+pip install selenium webdriver_manager
+python main.py
